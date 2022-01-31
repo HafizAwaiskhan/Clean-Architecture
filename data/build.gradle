@@ -1,0 +1,81 @@
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            // Is HTTP logs enabled for this build type
+            buildConfigField "Boolean", "HTTP_LOGS_ENABLED", 'true'
+            buildConfigField "String", "GATEWAY_BASE_API_URL", '"https://gateway-dev.zoofy.nl/"'
+
+            debuggable true
+            jniDebuggable true
+        }
+
+        Test {
+            // Is HTTP logs enabled for this build type
+            buildConfigField "Boolean", "HTTP_LOGS_ENABLED", 'true'
+            debuggable true
+            jniDebuggable true
+        }
+
+        release {
+            // Is HTTP logs enabled for this build type
+            buildConfigField "Boolean", "HTTP_LOGS_ENABLED", 'false'
+
+            debuggable false
+            jniDebuggable false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+        test.java.srcDirs += "src/test/kotlin"
+        androidTest.java.srcDirs += "src/androidTest/kotlin"
+    }
+}
+
+
+dependencies {
+ // Modules
+    implementation project(":domain")
+
+    // AndroidX
+    implementation androidx.core_ktx
+
+    // Kotlin
+    implementation kotlin_lang.stdlib
+    implementation kotlin_lang.coroutines_core
+
+    // Network
+    implementation network.retrofit
+    implementation network.gson_converter
+    implementation network.okhttp
+    implementation network.logging_interceptor
+
+}

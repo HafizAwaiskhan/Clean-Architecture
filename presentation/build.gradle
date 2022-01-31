@@ -1,0 +1,133 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.example.assignmentshopdev"
+        minSdk 21
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    signingConfigs {
+        release {
+            //here we have to write signing configurations
+        }
+    }
+
+    buildTypes {
+        debug {
+            resValue "string", "appName", "Assignment Debug"
+            applicationIdSuffix = ".debug"
+            signingConfig signingConfigs.debug
+
+            debuggable true
+            jniDebuggable true
+
+            // Is crash reports enabled for this build type
+            buildConfigField "Boolean", "CRASH_REPORTING_ENABLED", 'false'
+            // Debug API url
+            buildConfigField "String", "BASE_API_URL", '"https://api.nytimes.com/svc/mostpopular/v2/mostviewed/"'
+
+
+            // Screen orientation
+            manifestPlaceholders.screenOrientation = "portrait"
+        }
+        Test {
+            resValue "string", "appName", "Assignment Test"
+            applicationIdSuffix = ".debug"
+            signingConfig signingConfigs.debug
+
+            debuggable true
+            jniDebuggable true
+
+            // Test API url
+
+
+            // Screen orientation
+            manifestPlaceholders.screenOrientation = "portrait"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Assignment - ${variant.versionName} - ${versionCode} - ${variant.buildType.name}.apk"
+        }
+    }
+
+    packagingOptions {
+        pickFirst("META-INF/atomicfu.kotlin_module")
+    }
+}
+
+dependencies {
+    // Modules
+    implementation project(':data')
+    implementation project(':domain')
+    // Google
+    implementation google.material
+
+
+    // AndroidX
+    implementation androidx.appcompat
+    implementation androidx.cardview
+    implementation androidx.recyclerview
+    implementation androidx.constraintlayout
+
+
+    implementation androidx.core_ktx
+    implementation androidx.fragment_ktx
+
+    implementation androidx.navigation_fragment
+    implementation androidx.navigation_ui
+
+
+    // Kotlin
+    implementation kotlin_lang.stdlib
+    implementation kotlin_lang.coroutines_core
+    implementation kotlin_lang.coroutines_android
+
+    // Network
+    implementation network.retrofit
+    implementation network.gson_converter
+    implementation network.okhttp
+    implementation network.logging_interceptor
+
+    // MVP
+    implementation mvp.moxy
+    implementation mvp.moxy_androidx
+    implementation mvp.moxy_ktx
+    kapt mvp.moxy_compiler
+
+    // DI
+    implementation di.koin_core
+    implementation di.koin_viewmodel
+
+    // Other
+
+    implementation other.glide
+    implementation other.glide_integration
+    kapt other.glide_annotationProcessor
+    implementation other.timber
+
+}

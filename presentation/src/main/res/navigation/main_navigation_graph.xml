@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main_navigation_graph"
+    android:label="Main navigation graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.assignmentshopdev.ui.main.SearchedDataFragment"
+        android:label="Main"
+        tools:layout="@layout/recyclerview_layout">
+
+
+        <action
+            android:id="@+id/mainToDetails"
+            app:destination="@id/detailsScreen" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailsScreen"
+        android:name="com.example.assignmentshopdev.ui.detailsscreen.DetailsDataFragment"
+        android:label="details"
+        tools:layout="@layout/details_view">
+        <argument
+            android:name="detailData"
+            app:argType="com.example.domain.models.Result" />
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,7 @@
+apply plugin: "kotlin"
+
+dependencies {
+    // Kotlin
+    implementation kotlin_lang.stdlib
+    implementation kotlin_lang.coroutines_core
+}

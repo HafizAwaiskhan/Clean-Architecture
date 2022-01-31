@@ -1,0 +1,80 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+    ext {
+        // Google
+        google = [
+                material : "com.google.android.material:material:1.1.0"
+                ]
+
+        // Androidx
+        androidx = [
+                appcompat          : "androidx.appcompat:appcompat:1.1.0",
+                cardview           : "androidx.cardview:cardview:1.0.0",
+                recyclerview       : "androidx.recyclerview:recyclerview:1.1.0",
+                constraintlayout   : "androidx.constraintlayout:constraintlayout:1.1.3",
+
+                core_ktx           : "androidx.core:core-ktx:1.2.0",
+                fragment_ktx       : "androidx.fragment:fragment-ktx:1.2.3",
+
+                navigation_fragment: "androidx.navigation:navigation-fragment-ktx:2.2.1",
+                navigation_ui      : "androidx.navigation:navigation-ui-ktx:2.2.1"
+        ]
+
+        // Kotlin
+        kotlin_lang = [
+                stdlib            : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10",
+                coroutines_core   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2",
+                coroutines_android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
+        ]
+
+        // Network
+        network = [
+                retrofit           : "com.squareup.retrofit2:retrofit:2.9.0",
+                gson_converter     : "com.squareup.retrofit2:converter-gson:2.8.1",
+                okhttp             : "com.squareup.okhttp3:okhttp:4.5.0",
+                logging_interceptor: "com.squareup.okhttp3:logging-interceptor:4.5.0"
+        ]
+
+        // MVP
+        mvp = [
+                moxy         : "com.github.moxy-community:moxy:2.2.2",
+                moxy_androidx: "com.github.moxy-community:moxy-androidx:2.2.2",
+                moxy_compiler: "com.github.moxy-community:moxy-compiler:2.2.2",
+                moxy_ktx     : "com.github.moxy-community:moxy-ktx:2.2.2"
+        ]
+
+        // DI
+        di = [
+                koin_core     : "io.insert-koin:koin-core:2.0.1",
+                koin_viewmodel: "io.insert-koin:koin-androidx-viewmodel:2.0.1"
+        ]
+
+        // Other
+        other = [
+                glide                    : "com.github.bumptech.glide:glide:4.11.0",
+                glide_annotationProcessor: "com.github.bumptech.glide:compiler:4.11.0",
+                glide_integration        : "com.github.bumptech.glide:okhttp3-integration:4.11.0",
+                timber                   : "com.jakewharton.timber:timber:4.7.1"
+
+        ]
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

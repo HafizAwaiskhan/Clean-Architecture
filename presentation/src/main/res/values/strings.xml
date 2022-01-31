@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AssignmentShopDev</string>
+    <string name="errorUnknownError">Unknown problem</string>
+</resources>
