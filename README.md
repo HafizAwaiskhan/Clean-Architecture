@@ -36,4 +36,5 @@ Compile Android SDK: This app requires you to compile against API 30.
 # Author
 
 Hafiz Awais khan
-hafizawaiskhan1992@gmail.com
+
+Email : hafizawaiskhan1992@gmail.com
