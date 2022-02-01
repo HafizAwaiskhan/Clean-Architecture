@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/main"
-        android:name="com.example.assignmentshopdev.ui.main.SearchedDataFragment"
+        android:name="com.example.assignment.ui.main.SearchedDataFragment"
         android:label="Main"
         tools:layout="@layout/recyclerview_layout">
 
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/detailsScreen"
-        android:name="com.example.assignmentshopdev.ui.detailsscreen.DetailsDataFragment"
+        android:name="com.example.assignment.ui.detailsscreen.DetailsDataFragment"
         android:label="details"
         tools:layout="@layout/details_view">
         <argument

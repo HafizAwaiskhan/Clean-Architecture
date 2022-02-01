@@ -1,4 +1,4 @@
-package com.example.assignmentshopdev.ui.main
+package com.example.assignment.ui.main
 
 import android.content.Context
 import android.os.Bundle
@@ -7,9 +7,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.assignmentshopdev.R
-import com.example.assignmentshopdev.mvp.BaseMvpActivity
-import java.util.*
+import com.example.assignment.R
+import com.example.assignment.mvp.BaseMvpActivity
 
 
 class SearchedDataActivity : BaseMvpActivity() {

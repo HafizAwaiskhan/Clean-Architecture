@@ -1,7 +1,7 @@
 package nl.zoofy.mobile.ui.auth.signup.company
 
 import android.util.Log
-import com.example.assignmentshopdev.mvp.BaseMvpPresenter
+import com.example.assignment.mvp.BaseMvpPresenter
 import com.example.domain.interactors.main.MainInteractor
 import com.example.domain.models.ResponseFromApi
 import com.example.domain.utils.Either

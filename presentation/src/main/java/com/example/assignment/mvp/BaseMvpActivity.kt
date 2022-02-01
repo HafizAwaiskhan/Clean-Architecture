@@ -1,11 +1,11 @@
-package com.example.assignmentshopdev.mvp
+package com.example.assignment.mvp
 
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.annotation.IdRes
 import androidx.navigation.NavDirections
 import androidx.navigation.findNavController
-import com.example.assignmentshopdev.R
+import com.example.assignment.R
 import moxy.MvpAppCompatActivity
 
 

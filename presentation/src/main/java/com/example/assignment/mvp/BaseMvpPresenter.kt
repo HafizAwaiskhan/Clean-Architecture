@@ -1,6 +1,5 @@
-package com.example.assignmentshopdev.mvp
+package com.example.assignment.mvp
 
-import com.example.assignmentshopdev.R
 import com.example.domain.exception.Failure
 import com.example.domain.interactors.main.MainInteractor
 import kotlinx.coroutines.CoroutineScope

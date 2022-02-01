@@ -1,4 +1,4 @@
-package com.example.assignmentshopdev
+package com.example.assignment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.assignmentshopdev.mvp
+package com.example.assignment.mvp
 
 import moxy.MvpView
 import moxy.viewstate.strategy.SkipStrategy

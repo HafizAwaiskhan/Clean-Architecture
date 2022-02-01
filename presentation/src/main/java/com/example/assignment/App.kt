@@ -1,9 +1,9 @@
-package com.example.assignmentshopdev
+package com.example.assignment
 
 import android.app.Application
-import com.example.assignmentshopdev.di.iteratorsModule
-import com.example.assignmentshopdev.di.networkModule
-import com.example.assignmentshopdev.di.repositoriesModule
+import com.example.assignment.di.iteratorsModule
+import com.example.assignment.di.networkModule
+import com.example.assignment.di.repositoriesModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

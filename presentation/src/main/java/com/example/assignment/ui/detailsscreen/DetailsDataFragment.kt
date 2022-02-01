@@ -1,9 +1,9 @@
-package com.example.assignmentshopdev.ui.detailsscreen
+package com.example.assignment.ui.detailsscreen
 
 import android.os.Bundle
 import androidx.navigation.fragment.navArgs
-import com.example.assignmentshopdev.R
-import com.example.assignmentshopdev.mvp.BaseMvpFragment
+import com.example.assignment.R
+import com.example.assignment.mvp.BaseMvpFragment
 import kotlinx.android.synthetic.main.details_view.*
 import moxy.ktx.moxyPresenter
 

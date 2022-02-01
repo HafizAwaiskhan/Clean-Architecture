@@ -1,6 +1,6 @@
 package nl.zoofy.mobile.ui.auth.signup.company
 
-import com.example.assignmentshopdev.mvp.BaseMvpView
+import com.example.assignment.mvp.BaseMvpView
 import com.example.domain.models.ResponseFromApi
 import moxy.viewstate.strategy.alias.Skip
 

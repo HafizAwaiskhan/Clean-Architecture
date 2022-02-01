@@ -1,11 +1,11 @@
-package com.example.assignmentshopdev.ui.main
+package com.example.assignment.ui.main
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.assignmentshopdev.R
+import com.example.assignment.R
 import com.example.domain.models.ResponseFromApi
 import com.example.domain.models.Result
 import kotlinx.android.synthetic.main.rv_search_data.view.*

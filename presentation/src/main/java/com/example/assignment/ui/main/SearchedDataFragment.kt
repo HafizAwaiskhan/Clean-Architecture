@@ -1,11 +1,9 @@
-package com.example.assignmentshopdev.ui.main
+package com.example.assignment.ui.main
 
 import android.os.Bundle
-import android.text.Editable
-import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.assignmentshopdev.R
-import com.example.assignmentshopdev.mvp.BaseMvpFragment
+import com.example.assignment.R
+import com.example.assignment.mvp.BaseMvpFragment
 import com.example.domain.interactors.main.MainInteractor
 import com.example.domain.models.ResponseFromApi
 import com.example.domain.models.Result

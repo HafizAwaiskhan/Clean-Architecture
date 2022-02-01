@@ -1,4 +1,4 @@
-package com.example.assignmentshopdev.mvp
+package com.example.assignment.mvp
 
 import android.os.Bundle
 import android.view.View

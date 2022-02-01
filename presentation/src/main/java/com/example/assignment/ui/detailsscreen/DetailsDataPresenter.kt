@@ -1,6 +1,6 @@
-package com.example.assignmentshopdev.ui.detailsscreen
+package com.example.assignment.ui.detailsscreen
 
-import com.example.assignmentshopdev.mvp.BaseMvpPresenter
+import com.example.assignment.mvp.BaseMvpPresenter
 
 class DetailsDataPresenter : BaseMvpPresenter<DetailsDataView>() {
 

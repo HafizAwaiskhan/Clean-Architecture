@@ -1,4 +1,4 @@
-package com.example.assignmentshopdev.utils
+package com.example.assignment.utils
 
 import android.app.Activity
 import android.content.Intent
