@@ -1,4 +1,4 @@
-# Dev_Shop_Assignment
+# Assignment
 Its an Assignment.
 
 # Android-clean-architecture
