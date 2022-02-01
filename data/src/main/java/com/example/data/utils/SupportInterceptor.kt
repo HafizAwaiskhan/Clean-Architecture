@@ -16,7 +16,6 @@ import okhttp3.*
 
 class SupportInterceptor(context: Context) : Interceptor,
     Authenticator {
-
     /**
      * Interceptor class for setting of the headers for every request
      */
