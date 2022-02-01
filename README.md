@@ -1,4 +1,4 @@
-# Dev_Shop_Assignment
+# Assignment
 Its an Assignment.
 
 # Android-clean-architecture
@@ -36,3 +36,5 @@ Compile Android SDK: This app requires you to compile against API 30.
 # Author
 
 Hafiz Awais khan
+
+Email : hafizawaiskhan1992@gmail.com
