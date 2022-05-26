@@ -10,8 +10,6 @@ Use annotations to describe the HTTP request:
 
 * Object conversion to request body (e.g., JSON, protocol buffers)
 
-* Multipart request body and file upload
-
 # Moxy library:
 
 Moxy is a library that allows for hassle-free implementation of the MVP pattern in an Android Application. Without troubles of lifecycle and boilerplate code!
