@@ -1,6 +1,3 @@
-# Assignment
-Its an Assignment.
-
 # Android-clean-architecture
 
 This repository contains an app that implements Clean architecture using Kotlin , Koin, Retrofit , Coroutines , Navigation Graph and moxy library.
